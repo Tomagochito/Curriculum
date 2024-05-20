@@ -18,11 +18,11 @@
     <nav>
 
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Educación</a></li>
-            <li><a href="#">Proyectos colaborativos</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#informacion_personal">Información personal</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#proyectos_colaborativos">Proyectos colaborativos</a></li>
+            <li><a href="#habilidades_y_conocimientos">Habilidades y Conocimientos</a></li>
+            <li><a href="#contactos">Contactos</a></li>
         </ul>
 
     </nav>
@@ -30,8 +30,8 @@
     <section id="informacion-personal">
 
         <h2>Información personal</h2>
-        <p>Nombre: 
-            <span>Tomás Bolaños</span> 
+        <p>Nombre:
+            <span>Tomás Bolaños</span>
         </p>
         <p>
             Lugar de residencia: <span>Sur de Guayaquil</span>
@@ -41,7 +41,7 @@
 
     <section id="educacion">
         <h2>Educación</h2>
-        <p>Pregrado/Bachillerato: 
+        <p>Pregrado/Bachillerato:
             <span style="color: green;">Sta. Maria Goretti</span>
         </p>
         <p>
@@ -51,40 +51,49 @@
             Institución: <span>Universidad Escuela Superior Politécnica del Litoral</span>
         </p>
         <p>Cómo llegar</p>
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/SIXQqe2uXxs" title="Guayaquil : Escuela Superior Politécnica del Litoral (ESPOL)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/SIXQqe2uXxs"
+            title="Guayaquil : Escuela Superior Politécnica del Litoral (ESPOL)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p>Mapa: </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3987.0049766612747!2d-79.9545684!3d-2.1517806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72581f5e75e9%3A0x1c6fb76de9f4cea6!2sParadero%20Colegio%20Santa%20Cruz%20Del%20Sur!5e0!3m2!1ses-419!2sec!4v1716233272079!5m2!1ses-419!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3987.0049766612747!2d-79.9545684!3d-2.1517806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72581f5e75e9%3A0x1c6fb76de9f4cea6!2sParadero%20Colegio%20Santa%20Cruz%20Del%20Sur!5e0!3m2!1ses-419!2sec!4v1716233272079!5m2!1ses-419!2sec"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </section>
 
-    <section id="proyectos colaborativos">
+    <section id="proyectos_colaborativos">
 
         <h2>Proyectos colaborativos</h2>
         <ul>
-            <li> <a href="https://github.com/Tomagochito/POO4_PROY2P_MENDOZAESPINOZABOLANIOS.git"> App de Heladería </a>
+            <li> <a href="https://github.com/Tomagochito/POO4_PROY2P_MENDOZAESPINOZABOLANIOS.git" target="_blank"> App
+                    de Heladería </a>
             </li>
             <li> Simulacion de base de datos de Booking en MySQL </li>
         </ul>
 
     </section>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
+    <section id="habilidades_y_conocimientos">
+        <h2>Habilidades y conocimientos</h2>
 
-        <table>
+        <table border="1">
 
             <tr>
                 <th>Lenguajes de Programación </th>
-                <th>Bases de datos </th>
-                <th>Herramientas de desarrollo </th>
-                <th>Otros</th>
-
-            </tr>
-
-            <tr>
                 <td>Python básico, JavaScript básico, Java intermedio</td>
+            </tr>
+            <tr>
+                <th>Bases de datos </th>
                 <td>MySQL intermedio</td>
+            </tr>
+            <tr>
+                <th>Herramientas de desarrollo </th>
                 <td>Visual Studio Code, Git, Github</td>
+            </tr>
+            <tr>
+                <th>Otros</th>
                 <td>Inglés Básico</td>
             </tr>
 
@@ -104,6 +113,9 @@
 
             </ol>
         </li>
+        <li> <a href="https://www.linkedin.com/in/tomagochito/" target="_blank">Perfil de LinkedIn</a>
+
+        </li>
 
     </ul>
 
@@ -112,10 +124,10 @@
         <form action="/enviar" method="POST">
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
-    
+
             <label for="correo">Correo electrónico:</label><br>
             <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required><br><br>
-    
+
             <input type="submit" value="Enviar">
         </form>
         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
