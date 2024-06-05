@@ -2,74 +2,77 @@
 <html>
 
 <head>
-    <title>My Curriculum</title>
+    <title>My Currículum</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="keywords" description="html, css, javascript" author="Daniel">
+    <meta name="keywords" description="html, css, javascript, curriculum" author="Tomás Steven Bolaños Fajardo">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Currículum Vitae</h1>
+        <section id="titulocurriculum">
+<h1>Currículum Vitae</h1>
+        </section>
+
+        <section id= "imagen">
+        <img src="https://cdn.pixabay.com/photo/2024/05/02/09/16/web-development-8734249_1280.png"
+            alt="Descripción de la imagen" width="1000" height="700">
+        </section>
+
+        <section id = "navegacion">
+
+        <nav>
+
+            <ul>
+                <li><a href="#informacion_personal">Información personal</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#proyectos_colaborativos">Proyectos colaborativos</a></li>
+                <li><a href="#habilidades_y_conocimientos">Habilidades y Conocimientos</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+
+        </nav>
+    </section>
     </header>
 
-    <nav>
 
-        <ul>
-            <li><a href="#informacion_personal">Información personal</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#proyectos_colaborativos">Proyectos colaborativos</a></li>
-            <li><a href="#habilidades_y_conocimientos">Habilidades y Conocimientos</a></li>
-            <li><a href="#contactos">Contactos</a></li>
-        </ul>
-
-    </nav>
     <main>
 
-        <section id="informacion-personal">
+        <section id="informacion_personal">
 
             <h2>Información personal</h2>
-            <p>Nombre:
-                <span>Tomás Bolaños</span>
-            </p>
-            <p>
-                Lugar de residencia: <span>Sur de Guayaquil</span>
-            </p>
+            <p> Nombre: Tomás Bolaños </p>
+            <p> Sector: Sur de Guayaquil </p>
+
 
         </section>
 
         <section id="educacion">
-            <h2>Educación</h2>
-            <p>Pregrado/Bachillerato:
-                <span style="color: green;">Sta. Maria Goretti</span>
-            </p>
+            <h2>Educación/Estudios</h2>
+            <p>Pregrado/Bachillerato: Sta. Maria Goretti </p>
             <p>
-                Grado: <span style="color: yellow;">En curso</span>
+                Grado (En curso): Universidad Escuela Superior Politécnica del Litoral
             </p>
-            <p>
-                Institución: <span>Universidad Escuela Superior Politécnica del Litoral</span>
-            </p>
-            <recursosexternos>
-                <videocampus>
-                    <iframe width="250" height="250" src="https://www.youtube.com/embed/SIXQqe2uXxs"
-                        title="Guayaquil : Escuela Superior Politécnica del Litoral (ESPOL)" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </videocampus>
-                <mapacampus>
+     
+
+                <section id="mapacampus">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3987.0049766612747!2d-79.9545684!3d-2.1517806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72581f5e75e9%3A0x1c6fb76de9f4cea6!2sParadero%20Colegio%20Santa%20Cruz%20Del%20Sur!5e0!3m2!1ses-419!2sec!4v1716233272079!5m2!1ses-419!2sec"
                         width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </mapacampus>
-            </recursosexternos>
+                </section>
+            
         </section>
 
         <section id="proyectos_colaborativos">
 
             <h2>Proyectos colaborativos</h2>
+            <video controls style="width: 250px; height: 250px;">
+                <source src="https://cdn.pixabay.com/video/2023/05/17/163491-827845629_large.mp4" type="video/mp4">
+                Tu navegador no admite el elemento de video.
+            </video>
             <ul>
                 <li> <a href="https://github.com/Tomagochito/POO4_PROY2P_MENDOZAESPINOZABOLANIOS.git" target="_blank">
                         App
@@ -81,8 +84,9 @@
         </section>
 
         <section id="habilidades_y_conocimientos">
-            <h2>Habilidades y conocimientos</h2>
-
+            <h2>Conocimientos y Herramientas</h2>
+           
+            
             <table border="1">
 
                 <tr>
@@ -113,8 +117,8 @@
 
                     Correo electrónico
                     <ol>
-                        <li>Tomasbol@example.com</li>
-                        <li>Tbolfaj@example.com</li>
+                        <li>tbolanos@espol.edu.ec</li>
+                        <li>tomassteven2003@gmail.com</li>
 
                     </ol>
                 </li>
@@ -127,8 +131,8 @@
     </main>
 
 
-    <div>
-
+    <section id="formulario">
+<h2>Contáctame</h2>
         <form action="/enviar" method="POST">
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
@@ -136,13 +140,18 @@
             <label for="correo">Correo electrónico:</label><br>
             <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required><br><br>
 
+            <label for="tipo_persona">¿Quién me contacta?:</label><br>
+            <select id="tipo_persona" name="tipo_persona">
+                <option value="persona">Persona</option>
+                <option value="empresa">Empresa</option>
+            </select><br><br>
+
             <input type="submit" value="Enviar">
         </form>
-        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-        <img src="https://placehold.co/600x400" alt="Una imagen donde no hay nada">
 
 
-    </div>
+
+    </section>
 
 
 
